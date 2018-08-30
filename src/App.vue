@@ -1,5 +1,5 @@
 <template>
-  <div id="app" role="main">
+  <div id="app-content" role="main">
     <h1>Keep or Sweep</h1>
     <div class="container">
       <vue-swing
@@ -177,6 +177,24 @@ body,
 button {
   /* For some reason the button needs to know this specifically */
   font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+}
+
+.app-keeporsweep {
+  overflow: hidden;
+}
+
+#app-content {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #app {

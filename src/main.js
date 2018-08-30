@@ -17,9 +17,14 @@ import twitter from './services/twitter';
 Vue.component('vue-swing', VueSwing);
 Vue.config.productionTip = false;
 
+Vue.prototype.t = t
+Vue.prototype.n = n
+Vue.prototype.OC = OC
+Vue.prototype.OCA = OCA
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#app-content',
   components: { App },
   template: '<App :elements="elements" />',
   data: {
@@ -45,4 +50,7 @@ new Vue({
     //   return 0.5 - Math.random();
     // });
   },
-});
+  render: h => h(App)
+}).$mount('#content');
+
+
