@@ -77,7 +77,7 @@ export default {
       if (remove) {
         this.delete();
       }
-      this.elements.pop();
+      this.elements.shift();
     },
     delete() {
       // TODO: Actually delete the element
@@ -200,6 +200,11 @@ button {
 h1 {
   visibility: hidden;
   position: absolute;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 h2 {

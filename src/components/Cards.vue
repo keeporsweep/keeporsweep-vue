@@ -42,12 +42,39 @@ export default {
   box-shadow: 0 .3vh 4vh hsla(0, 0%, 10%, .1);
 }
 
+/* Reverse card order to show first card on top
+   Thanks to https://stackoverflow.com/questions/2345132/reversing-z-index-based-from-page-render-order */
+.card:first-child {
+  z-index:10;
+}
+.card:nth-child(2) {
+  z-index:9;
+}
+.card:nth-child(3) {
+  z-index:8;
+}
+.card:nth-child(4) {
+  z-index:7;
+}
+.card:nth-child(5) {
+  z-index:6;
+}
+.card:nth-child(6) {
+  z-index:5;
+}
+
 .card:nth-child(odd) {
   transform: rotate(-3deg);
 }
 
 .card:nth-child(3n) {
   transform: rotate(4deg);
+}
+
+/* Make only the top card swipeable
+   See https://github.com/gajus/swing/issues/15 */
+:not(:first-child) {
+  pointer-events: none;
 }
 
 .preview {
