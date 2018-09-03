@@ -7,14 +7,16 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "electron": "electron .",
+    "electron": "electron electron.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "electron-compile": "^6.4.3",
     "lodash.shuffle": "4.2.0",
+    "recursive-readdir": "^2.2.2",
     "swing": "3.1.1",
     "vue": "2.5.17",
     "vue-swing": "0.0.9"
@@ -36,7 +38,7 @@
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
-    "electron": "^2.0.8",
+    "electron-prebuilt-compile": "^2.0.7",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^11.3.0",
     "eslint-friendly-formatter": "^3.0.0",
