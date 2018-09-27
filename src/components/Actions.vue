@@ -61,7 +61,8 @@ export default {
   height: 20vh;
   padding: 0;
   padding-top: 8vh;
-  color: hsla(0, 0%, 100%, 1);
+  /* !important is needed to prevent Nextcloud from overriding button styles */
+  color: hsla(0, 0%, 100%, 1) !important;
   font-size: 5vh;
   font-weight: bold;
   background-size: 10vh;
@@ -77,18 +78,18 @@ export default {
 }
 
 .sweep {
-  background-color: hsla(2, 81%, 55%, 1);
+  background-color: hsla(2, 81%, 55%, 1) !important;
   border-color: hsla(2, 81%, 55%, 1);
   box-shadow: 0 1vh 0 hsla(2, 81%, 36%, 1);
-  background-image: url("../assets/close-white.svg?v=1");
+  background-image: url('../assets/close-white.svg?v=1');
 }
 
 .keep {
-  background-color: hsla(201, 100%, 39%, 1);
+  background-color: hsla(201, 100%, 39%, 1) !important;
   border-color: hsla(201, 100%, 39%, 1);
   box-shadow: 0 1vh 0 hsla(201, 100%, 25%, 1);
   margin-left: 5vh;
-  background-image: url("../assets/checkmark-white.svg?v=1");
+  background-image: url('../assets/checkmark-white.svg?v=1');
 }
 
 .sweep:hover,

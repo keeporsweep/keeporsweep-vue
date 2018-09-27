@@ -228,7 +228,7 @@ p {
   color: hsla(0, 0%, 100%, 1);
   font-size: 5vh;
   font-weight: bold;
-  background-image: url('https://uploads.codesandbox.io/uploads/user/825c1616-7d14-4df9-bbaf-74faf1494186/-Hbm-icon.svg');
+  background-image: url('assets/icon.svg?v=1');
   background-size: cover;
   border-radius: 50%;
   border: none;

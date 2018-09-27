@@ -33,6 +33,8 @@ export default {
   max-height: 70vh;
   border-radius: 3vh;
   display: none;
+  /* Show cards above action buttons */
+  z-index: 1;
 }
 
 /* Only show and apply shadow to 5 top cards for performance */
