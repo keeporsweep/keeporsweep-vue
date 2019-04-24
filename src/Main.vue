@@ -1,3 +1,6 @@
+<template>
+    <App :elements="elements" />
+</template>
 <script>
 import Vue from 'vue';
 import shuffle from 'lodash.shuffle';
@@ -18,7 +21,6 @@ Vue.component('vue-swing', VueSwing);
 export default {
   name: 'Main',
   components: { App },
-  template: '<App :elements="elements" />',
   data() {
     return {
       elements: [],
